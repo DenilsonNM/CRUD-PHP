@@ -1,7 +1,7 @@
 :root {
   --color-1: #333;
   --color-2: #cccccc;
-  --color-3: #5454ee;
+  --color-3: #007bff;
   --color-4: #54b9ff;
   --color-5: #fff;
   --color-6: #0afc83;
@@ -32,6 +32,16 @@ body {
 
 button {
   cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 /* HEADER */
@@ -130,6 +140,99 @@ header {
   border: 0;
   object-fit: cover;
 }
+
+/* REGISTRO */
+/* ------------------------------------- */
+
+.nav_menu_regi {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.nav_menu_regi ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav_menu_regi a {
+  display: inline-block;
+  /* margin: 10px; */
+  padding: 15px 30px;
+  font-weight: bold;
+  color: var(--color-5);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-3);
+  width: 400px;
+  /* Azul inicial */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+    /* Sombra */
+}
+
+
+.nav_menu_regi a:hover {
+  background-color: var(--color-6);
+  color: var(--color-1);
+  /* Azul más oscuro al pasar el mouse */
+  transform: scale(1.05);
+  /* Efecto de agrandamiento */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra más intensa */
+}
+
+/* CONTACTOS */
+/* ------------------------------------- */
+
+.titulo_contactos {
+  background-color: var(--color-7);
+  color: var(--color-5);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.section_contactos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section_contactos article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  text-align: center;
+  gap: 20px;
+  padding: 20px 10px;
+  transition: all .20s linear;
+}
+
+.section_contactos article:hover {
+  transform: scale(105%);
+}
+
+.section_contactos p {
+  background-color: var(--color-5);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.section_contactos img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+
 
 /* FOOTER */
 /* ------------------------------------- */

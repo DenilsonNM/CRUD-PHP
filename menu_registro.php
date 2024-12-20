@@ -15,6 +15,17 @@
   include "header_menu.php"
   ?>
 
+  <nav class="nav_menu_regi ancho">
+    <ul>
+      <h3>Sube tus documentos</h3>
+      <li><a href="registro.php">Iniciales</a></li>
+      <li><a href="">Finales</a></li>
+      <h3>Consulta tu estatus</h3>
+      <li><a href="">Iniciales</a></li>
+      <li><a href="">Finales</a></li>
+    </ul>
+  </nav>
+
   <?php
   include "footer.php"
   ?>
