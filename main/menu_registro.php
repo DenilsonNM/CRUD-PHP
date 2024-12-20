@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="../styles/main.css">
 
 </head>
 
 <body>
 
   <?php
-  include "header_menu.php"
+  include "header_menu_reg.php"
   ?>
 
   <nav class="nav_menu_regi ancho">
@@ -27,7 +27,7 @@
   </nav>
 
   <?php
-  include "footer.php"
+  include "../footer.php"
   ?>
 
 </body>
