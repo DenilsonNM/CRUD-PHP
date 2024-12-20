@@ -21,7 +21,7 @@
       <li><a href="registro.php">Iniciales</a></li>
       <li><a href="">Finales</a></li>
       <h3>Consulta tu estatus</h3>
-      <li><a href="">Iniciales</a></li>
+      <li><a href="ver_registro.php">Iniciales</a></li>
       <li><a href="">Finales</a></li>
     </ul>
   </nav>

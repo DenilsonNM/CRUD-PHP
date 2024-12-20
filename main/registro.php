@@ -15,7 +15,7 @@
 
   <section class="section_formregistro">
     <br>
-    <form action="">
+    <form action="guardar_registro.php" method="post" enctype="multipart/form-data">
 
       <fieldset class="fieldset_info ancho">
         <div class="cajas">
@@ -38,6 +38,7 @@
           <select id="sexo" name="sexo" required>
             <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
+            <option value="otro">helicoptero apache 1998</option>
           </select><br><br>
 
           <label for="correo_in">Correo Institucional *</label><br>
@@ -56,10 +57,10 @@
           <hr>
           <br>
           <label>¿Está el proyecto aprobado en el Banco de Datos? *</label><br><br>
-          <input type="radio" id="banco_datos" name="banco_datos" value="si" required />
-          <label for="banco_datos">Sí</label>
-          <input type="radio" id="banco_datos" name="banco_datos" value="no" />
-          <label for="banco_datos">No</label>
+          <input type="radio" id="banco_datos_si" name="banco_datos" value="si" required />
+          <label for="banco_datos_si">Sí</label>
+          <input type="radio" id="banco_datos_no" name="banco_datos" value="no" />
+          <label for="banco_datos_no">No</label>
           <br><br>
           <label for="id_proyecto">ID de Proyecto de Residencia Profesional *</label><br>
           <input type="text" id="id_proyecto" name="id_proyecto" required /><br><br>
@@ -174,6 +175,8 @@
         </table>
       </fieldset>
       <br>
+      <button type="submit">Enviar</button>
+      <br><br>
     </form>
   </section>
 

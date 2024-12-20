@@ -363,6 +363,22 @@ footer {
   text-align: center;
 }
 
+.section_formregistro button {
+  background-color: var(--color-3);
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  color: var(--color-5);
+  transition: all .15s linear;
+}
+
+.section_formregistro button:hover {
+  background-color: var(--color-6);
+  color: var(--color-1);
+}
+
 .fieldset_info {
   display: flex;
   justify-content: space-evenly;
