@@ -68,7 +68,6 @@
     </article>
   </section>
 
-
   <?php
   include "footer.php"
   ?>
