@@ -1,0 +1,42 @@
+/* ------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 24px;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  background-color: #cccccc;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ------------------------------------- */
+
+header {
+  background-color: #5454ee;
+}
+
+.div_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  align-items: center;
+}
+
+.div_header img {
+  max-width: 50px;
+}
