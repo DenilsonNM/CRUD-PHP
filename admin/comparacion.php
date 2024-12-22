@@ -1,12 +1,12 @@
 <?php
 require "conexion.php";
 
-$usuario = $_POST["usuario"];
-$contr = $_POST["contr"];
+$nom_admin = $_POST["nom_admin"];
+$contr_admin = $_POST["contr_admin"];
 
 session_start();
 
-$query = mysqli_query($conectar, "SELECT * FROM admini WHERE usuario = '$usuario' AND contr = '$contr'");
+$query = mysqli_query($conectar, "SELECT * FROM us_admin WHERE nom_admin = '$nom_admin' AND contr_admin = '$contr_admin'");
 
 $nr = mysqli_num_rows($query);
 
@@ -14,7 +14,7 @@ if ($nr == 1) {
 
     $row = mysqli_fetch_assoc($query);
 
-    header("location: admin/doc.php");
+    header("location: ");
     exit;
 } else {
     include("login.php");

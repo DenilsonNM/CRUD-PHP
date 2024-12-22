@@ -17,11 +17,11 @@
         <br>
         <div class="input-field">
           <p>Usuario</p>
-          <input type="text" name="usuario" required>
+          <input type="text" name="nom_admin" required>
         </div>
         <div class="input-field">
           <p>Contraseña</p>
-          <input type="password" name="contr" required>
+          <input type="password" name="contr_admin" required>
         </div>
         <br>
         <button type="submit">Entrar</button>
