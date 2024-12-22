@@ -464,6 +464,10 @@ footer {
   padding: 10px;
 }
 
+.table_verdocs a {
+  text-decoration: none;
+}
+
 /* ------------------------------------- */
 
 .section_table_admin {

@@ -70,18 +70,18 @@
 
                 <td><?php echo htmlspecialchars($row["matricula"]); ?></td>
 
-                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_prese" target="_blank">Ver</a>
+                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_prese" target="_blank">PDF</a>
                 </td>
 
-                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_acept" target="_blank">Ver</a></td>
+                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_acept" target="_blank">PDF</a></td>
 
-                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_term_ss" target="_blank">Ver</a></td>
+                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_term_ss" target="_blank">PDF</a></td>
 
-                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=com_inscr" target="_blank">Ver</a></td>
+                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=com_inscr" target="_blank">PDF</a></td>
 
-                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=com_vig_dd" target="_blank">Ver</a></td>
+                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=com_vig_dd" target="_blank">PDF</a></td>
 
-                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=rep_pre_res" target="_blank">Ver</a></td>
+                <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=rep_pre_res" target="_blank">PDF</a></td>
 
                 <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=sol_proy" target="_blank">Ver</a></td>
 
