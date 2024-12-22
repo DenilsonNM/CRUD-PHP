@@ -15,16 +15,16 @@
   include "header_menu_reg.php"
   ?>
 
-  <section>
-    <form action="" method="post">
-      <label for="matricula">Matrícula</label>
+  <section class="section_buscar">
+    <form action="" method="post" class="ancho">
+      <label for="matricula">Matrícula:</label>
       <input type="text" name="matricula" required id="matricula">
       <button type="submit">Enviar</button>
     </form>
   </section>
 
-  <section>
-    <table>
+  <section class="ancho">
+    <table class="table_verdocs">
       <thead>
         <tr>
           <th>Alumno</th>
@@ -50,10 +50,8 @@
 
           // Consulta con JOIN para obtener los datos relacionados de info_alumno, ini_docs y ini_coment
           $alumno = "
-        SELECT 
-            ia.nombre, ia.matricula, 
-            id.car_prese, id.car_acept, id.car_term_ss, id.com_inscr, id.com_vig_dd, 
-            id.rep_pre_res, id.sol_proy, ic.comentario, id.fecha_subida
+        SELECT
+            ia.id_registro, ia.nombre, ia.apellido_pa, ia.apellido_ma, ia.matricula, id.car_prese, id.car_acept, id.car_term_ss, id.com_inscr, id.com_vig_dd, id.rep_pre_res, id.sol_proy, ic.comentario, id.fecha_subida
         FROM info_alumno ia
         LEFT JOIN ini_docs id ON ia.id_registro = id.id_registro
         LEFT JOIN ini_coment ic ON id.id_pdf = ic.id_pdf
@@ -68,7 +66,7 @@
             while ($row = mysqli_fetch_assoc($resultado)) {
         ?>
               <tr>
-                <td><?php echo htmlspecialchars($row["nombre"]); ?></td>
+                <td><?php echo htmlspecialchars($row["nombre"]) . " " . htmlspecialchars($row["apellido_pa"]) . " " . htmlspecialchars($row["apellido_ma"]); ?></td>
 
                 <td><?php echo htmlspecialchars($row["matricula"]); ?></td>
 

@@ -23,6 +23,7 @@
 .ancho {
   max-width: 1200px;
   margin: auto;
+  /* border: 1px red solid; */
 }
 
 body {
@@ -410,6 +411,55 @@ footer {
 }
 
 .table_docs td {
+  background-color: var(--color-8);
+  padding: 10px;
+}
+
+/* VER REGISTROS */
+/* ------------------------------------- */
+
+.section_buscar {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.section_buscar form {
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(10, 10, 10, 0.5);
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.section_buscar button {
+  background-color: var(--color-3);
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  color: var(--color-5);
+  transition: all .15s linear;
+}
+
+.section_buscar button:hover {
+  background-color: var(--color-6);
+  color: var(--color-1);
+}
+
+.table_verdocs {
+  text-align: center;
+}
+
+.table_verdocs th {
+  background-color: var(--color-9);
+  padding: 10px;
+  text-align: center;
+}
+
+.table_verdocs td {
   background-color: var(--color-8);
   padding: 10px;
 }
