@@ -14,7 +14,7 @@ if ($nr == 1) {
 
     $row = mysqli_fetch_assoc($query);
 
-    header("location: ");
+    header("location: index_admin.php");
     exit;
 } else {
     include("login.php");
@@ -25,5 +25,3 @@ if ($nr == 1) {
 <?php
     exit;
 }
-mysqli_free_result($query);
-mysqli_close($conectar);

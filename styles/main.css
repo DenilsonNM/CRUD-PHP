@@ -463,3 +463,9 @@ footer {
   background-color: var(--color-8);
   padding: 10px;
 }
+
+/* ------------------------------------- */
+
+.section_table_admin {
+  overflow-x: auto;
+}
