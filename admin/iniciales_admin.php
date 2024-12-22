@@ -27,8 +27,8 @@
           <th>Comprobante Vigencia DD</th>
           <th>Reporte Preliminar Residencia</th>
           <th>Solicitud Proyecto</th>
-          <th>Comentario</th>
           <th>Fecha de Subida</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -71,9 +71,16 @@
 
             <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=sol_proy" target="_blank">PDF</a></td>
 
-            <td><?php echo htmlspecialchars($row['comentario']); ?></td>
-
             <td><?php echo htmlspecialchars($row['fecha_subida']); ?></td>
+
+            <td>
+              <?php
+              echo "<a class=\"button_mod\" onclick=\"return confirm('¿Realmente deseas MODIFICAR?')\" href='modificar_estatus.php?id_registro=" . $row['id_registro'] . "'>Modificar</a>";
+              ?>
+            </td>
+
+            <!-- <td><?php echo htmlspecialchars($row['comentario']); ?></td> -->
+
           </tr>
         <?php
         }

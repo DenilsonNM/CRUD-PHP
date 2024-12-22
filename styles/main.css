@@ -473,3 +473,15 @@ footer {
 .section_table_admin {
   overflow-x: auto;
 }
+
+.button_mod {
+  color: var(--color-5);
+  background-color: var(--color-3);
+  padding: 10px;
+  border-radius: 10px;
+  transition: all .20s linear;
+}
+
+.button_mod:hover {
+  background-color: var(--color-7);
+}

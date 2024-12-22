@@ -23,7 +23,7 @@
           <hr>
           <br>
           <label for="matricula">Matrícula *</label><br>
-          <input type="text" id="matricula" name="matricula" required /><br><br>
+          <input type="text" id="matricula" name="matricula" required maxlength="9" /><br><br>
 
           <label for="apellido_pa">Apellido Paterno *</label><br>
           <input type="text" id="apellido_pa" name="apellido_pa" required /><br><br>
@@ -36,9 +36,9 @@
 
           <label for="sexo">Sexo *</label><br>
           <select id="sexo" name="sexo" required>
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="otro">helicoptero apache 1998</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">helicoptero apache 1998</option>
           </select><br><br>
 
           <label for="correo_in">Correo Institucional *</label><br>
@@ -49,19 +49,24 @@
 
           <label for="telefono">Teléfono de contacto *</label>
           <br>
-          <input type="number" id="telefono" name="telefono" required />
+          <input type="number" id="telefono" name="telefono" required maxlength="10" />
         </div>
 
         <div class="cajas">
           <h2>información de la residencia</h2>
           <hr>
           <br>
-          <label>¿Está el proyecto aprobado en el Banco de Datos? *</label><br><br>
-          <input type="radio" id="banco_datos_si" name="banco_datos" value="si" required />
+          <label>¿Está el proyecto aprobado en el Banco de proyectos? *</label><br><br>
+          <!-- <input type="radio" id="banco_datos_si" name="banco_datos" value="si" required />
           <label for="banco_datos_si">Sí</label>
           <input type="radio" id="banco_datos_no" name="banco_datos" value="no" />
           <label for="banco_datos_no">No</label>
-          <br><br>
+          <br><br> -->
+          <select id="banco_datos" name="banco_datos" required>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select><br><br>
+
           <label for="id_proyecto">ID de Proyecto de Residencia Profesional *</label><br>
           <input type="text" id="id_proyecto" name="id_proyecto" required /><br><br>
 
