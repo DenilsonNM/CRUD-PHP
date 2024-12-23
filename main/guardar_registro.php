@@ -93,7 +93,7 @@ try {
   $id_pdf = mysqli_insert_id($conectar);
 
   // Insertar comentario en ini_coment
-  $sqlComentario = "INSERT INTO ini_coment (id_pdf, comentario) VALUES (?, 'sin comentarios')";
+  $sqlComentario = "INSERT INTO ini_coment (id_pdf, comentario, car_prese, car_acept, car_term_ss, com_inscr, com_vig_dd, rep_pre_res, sol_proy) VALUES (?, 'Sin comentarios', 'Sin revisar', 'Sin revisar', 'Sin revisar', 'Sin revisar', 'Sin revisar', 'Sin revisar', 'Sin revisar')";
   $stmtComentario = mysqli_prepare($conectar, $sqlComentario);
   mysqli_stmt_bind_param($stmtComentario, 'i', $id_pdf);
   mysqli_stmt_execute($stmtComentario);
@@ -105,7 +105,7 @@ try {
   <script>
     setTimeout(function() {
       window.location.href = 'registro.php';
-    }, 5000);
+    }, 2000);
   </script>
 <?php
 } catch (Exception $e) {

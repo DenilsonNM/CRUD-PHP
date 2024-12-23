@@ -97,7 +97,7 @@ header {
   font-weight: bold;
   padding: 10px;
   border-radius: 50px;
-  transition: all .10s linear;
+  transition: all .15s linear;
 }
 
 .nav_menu a:hover {
@@ -480,8 +480,16 @@ footer {
   padding: 10px;
   border-radius: 10px;
   transition: all .20s linear;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .button_mod:hover {
   background-color: var(--color-7);
+}
+
+.div_btnvolver {
+  text-align: center;
+  margin-top: 20px;
 }
