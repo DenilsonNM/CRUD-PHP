@@ -19,7 +19,7 @@
     <form action="" method="post" class="ancho">
       <label for="matricula">Matrícula:</label>
       <input type="text" name="matricula" required id="matricula">
-      <button type="submit">Enviar</button>
+      <button type="submit">Buscar</button>
     </form>
   </section>
 

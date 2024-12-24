@@ -493,3 +493,10 @@ footer {
   text-align: center;
   margin-top: 20px;
 }
+
+.div_respuesta_reg_fin {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--color-7);
+}

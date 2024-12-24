@@ -131,49 +131,49 @@
           <tbody>
             <tr>
               <td>carta de presentacón</td>
-              <td><input type="file" id="file1" name="car_prese" accept="application/pdf" required>
+              <td><input type="file" id="car_prese" name="car_prese" accept="application/pdf" required>
               </td>
             </tr>
 
             <tr>
               <td>carta de aceptación</td>
               <td>
-                <input type="file" id="file1" name="car_acept" accept="application/pdf" required>
+                <input type="file" id="car_acept" name="car_acept" accept="application/pdf" required>
               </td>
             </tr>
 
             <tr>
               <td>carta terminacion servicio social</td>
               <td>
-                <input type="file" id="file1" name="car_term_ss" accept="application/pdf" required>
+                <input type="file" id="car_term_ss" name="car_term_ss" accept="application/pdf" required>
               </td>
             </tr>
 
             <tr>
               <td>comprobante de inscripcion de pago (semestreactual)</td>
               <td>
-                <input type="file" id="file1" name="com_inscr" accept="application/pdf" required>
+                <input type="file" id="com_inscr" name="com_inscr" accept="application/pdf" required>
               </td>
             </tr>
 
             <tr>
               <td>constancia de vigencia imss,isste</td>
               <td>
-                <input type="file" id="file1" name="com_vig_dd" accept="application/pdf" required>
+                <input type="file" id="com_vig_dd" name="com_vig_dd" accept="application/pdf" required>
               </td>
             </tr>
 
             <tr>
               <td>reporte preeliminar de residencia</td>
               <td>
-                <input type="file" id="file1" name="rep_pre_res" accept="application/pdf" required>
+                <input type="file" id="rep_pre_res" name="rep_pre_res" accept="application/pdf" required>
               </td>
             </tr>
 
             <tr>
               <td>solicitud del proyecto</td>
               <td>
-                <input type="file" id="file1" name="sol_proy" accept="application/pdf" required>
+                <input type="file" id="sol_proy" name="sol_proy" accept="application/pdf" required>
               </td>
             </tr>
           </tbody>

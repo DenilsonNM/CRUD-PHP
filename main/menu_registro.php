@@ -19,7 +19,7 @@
     <ul>
       <h3>Sube tus documentos</h3>
       <li><a href="registro.php">Iniciales</a></li>
-      <li><a href="">Finales</a></li>
+      <li><a href="registro_final.php">Finales</a></li>
       <h3>Consulta tu estatus</h3>
       <li><a href="ver_registro.php">Iniciales</a></li>
       <li><a href="">Finales</a></li>
