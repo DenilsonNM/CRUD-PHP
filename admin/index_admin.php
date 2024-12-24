@@ -21,7 +21,7 @@
       <h3>Documentos Iniciales</h3>
       <li><a href="iniciales_admin.php">Administrar</a></li>
       <h3>Documentos Finales</h3>
-      <li><a href="">Administrar</a></li>
+      <li><a href="finales_admin.php">Administrar</a></li>
     </ul>
   </nav>
 

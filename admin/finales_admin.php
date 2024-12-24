@@ -39,11 +39,11 @@
         $alumno = "
         SELECT
           ia.id_registro, ia.nombre, ia.apellido_pa, ia.apellido_ma, ia.matricula, 
-          id.car_prese, id.car_acept, id.car_term_ss, id.com_inscr, id.com_vig_dd, 
-          id.rep_pre_res, id.sol_proy, ic.comentario, id.fecha_subida, ic.car_prese, ic.car_acept, ic.car_term_ss, ic.com_inscr, ic.com_vig_dd, ic.rep_pre_res, ic.sol_proy
+          fd.car_prese, fd.car_acept, fd.car_term_ss, fd.com_inscr, fd.com_vig_dd, 
+          fd.rep_pre_res, fd.sol_proy, fc.comentario, fd.fecha_subida, fc.car_prese, fc.car_acept, fc.car_term_ss, fc.com_inscr, fc.com_vig_dd, fc.rep_pre_res, fc.sol_proy
         FROM info_alumno ia
-        LEFT JOIN ini_docs id ON ia.id_registro = id.id_registro
-        LEFT JOIN ini_coment ic ON id.id_pdf = ic.id_pdf
+        LEFT JOIN fin_docs fd ON ia.id_registro = fd.id_registro
+        LEFT JOIN fin_coment fc ON fd.id_pdf = fc.id_pdf
         ";
 
         // Ejecutar la consulta
@@ -57,20 +57,20 @@
 
             <td><?php echo htmlspecialchars($row["matricula"]); ?></td>
 
-            <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_prese" target="_blank">PDF</a>
+            <td><a href="ver_documento_final.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_prese" target="_blank">PDF</a>
             </td>
 
-            <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_acept" target="_blank">PDF</a></td>
+            <td><a href="ver_documento_final.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_acept" target="_blank">PDF</a></td>
 
-            <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_term_ss" target="_blank">PDF</a></td>
+            <td><a href="ver_documento_final.php?id_registro=<?php echo $row['id_registro']; ?>&documento=car_term_ss" target="_blank">PDF</a></td>
 
-            <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=com_inscr" target="_blank">PDF</a></td>
+            <td><a href="ver_documento_final.php?id_registro=<?php echo $row['id_registro']; ?>&documento=com_inscr" target="_blank">PDF</a></td>
 
-            <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=com_vig_dd" target="_blank">PDF</a></td>
+            <td><a href="ver_documento_final.php?id_registro=<?php echo $row['id_registro']; ?>&documento=com_vig_dd" target="_blank">PDF</a></td>
 
-            <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=rep_pre_res" target="_blank">PDF</a></td>
+            <td><a href="ver_documento_final.php?id_registro=<?php echo $row['id_registro']; ?>&documento=rep_pre_res" target="_blank">PDF</a></td>
 
-            <td><a href="ver_documento.php?id_registro=<?php echo $row['id_registro']; ?>&documento=sol_proy" target="_blank">PDF</a></td>
+            <td><a href="ver_documento_final.php?id_registro=<?php echo $row['id_registro']; ?>&documento=sol_proy" target="_blank">PDF</a></td>
 
             <td><?php echo htmlspecialchars($row['comentario']); ?></td>
 
@@ -78,12 +78,9 @@
 
             <td>
               <?php
-              echo "<a class=\"button_mod\" onclick=\"return confirm('¿Realmente deseas MODIFICAR?')\" href='modificar_estatus.php?id_registro=" . $row['id_registro'] . "'>Modificar</a>";
+              echo "<a class=\"button_mod\" onclick=\"return confirm('¿Realmente deseas MODIFICAR?')\" href='modificar_estatus_final.php?id_registro=" . $row['id_registro'] . "'>Modificar</a>";
               ?>
             </td>
-
-            <!-- <td><?php echo htmlspecialchars($row['comentario']); ?></td> -->
-
           </tr>
 
           <tr>

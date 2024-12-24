@@ -81,7 +81,6 @@
             <th>Comprobante Vigencia DD</th>
             <th>Reporte Preliminar Residencia</th>
             <th>Solicitud Proyecto</th>
-            <th>Fecha de Subida</th>
             <th>Comentario</th>
             <th></th>
           </tr>
@@ -149,8 +148,6 @@
                 <option value="Rechazado" <?php if ($sol_proy == 'Rechazado') echo 'selected'; ?>>Rechazado</option>
               </select>
             </td>
-
-            <td><?php echo htmlspecialchars($estatus['fecha_subida']); ?></td>
 
             <td><textarea name="comentario" style="white-space: pre-wrap;" required><?= htmlspecialchars($comentario) ?></textarea></td>
 
