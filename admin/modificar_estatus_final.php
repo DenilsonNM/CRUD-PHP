@@ -13,7 +13,7 @@
   <?php
   include "header_admin.php"
   ?>
-  <h2 class="h2_title_sections">Documentos Iniciales</h2>
+  <h2 class="h2_title_sections">Documentos Finales</h2>
 
 
   <?php
@@ -26,11 +26,11 @@
     $alumno = "
             SELECT
               ia.id_registro, ia.nombre, ia.apellido_pa, ia.apellido_ma, ia.matricula, 
-              ic.car_prese, ic.car_acept, ic.car_term_ss, ic.com_inscr, ic.com_vig_dd, 
-              ic.rep_pre_res, ic.sol_proy, ic.comentario, id.fecha_subida
+              fc.car_prese, fc.car_acept, fc.car_term_ss, fc.com_inscr, fc.com_vig_dd, 
+              fc.rep_pre_res, fc.sol_proy, fc.comentario, fd.fecha_subida
             FROM info_alumno ia
-            LEFT JOIN ini_docs id ON ia.id_registro = id.id_registro
-            LEFT JOIN ini_coment ic ON id.id_pdf = ic.id_pdf
+            LEFT JOIN fin_docs fd ON ia.id_registro = fd.id_registro
+            LEFT JOIN fin_coment fc ON fd.id_pdf = fc.id_pdf
             WHERE ia.id_registro = $id_registro";
 
     $resultado = mysqli_query($conectar, $alumno);
@@ -63,12 +63,11 @@
   ?>
 
   <div class="div_btnvolver ">
-    <a href="iniciales_admin.php" class="button_mod" onclick="return confirm('¿Estás seguro de que desea regresar?')">Volver</a>
-
+    <a href="finales_admin.php" class="button_mod" onclick="return confirm('¿Estás seguro de que desea regresar?')">Volver</a>
   </div>
-  <section class="section_table_admin ancho">
+  <section class=" section_table_admin ancho">
 
-    <form action="actualizar_estatus.php?id_registro=<?= trim($id_registro) ?>" method="POST">
+    <form action="actualizar_estatus_final.php?id_registro=<?= trim($id_registro) ?>" method="POST">
 
 
       <table class="table_verdocs">

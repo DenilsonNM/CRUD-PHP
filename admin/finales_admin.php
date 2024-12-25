@@ -13,6 +13,8 @@
   <?php
   include "header_admin.php"
   ?>
+  <h2 class="h2_title_sections">Documentos Finales</h2>
+
 
   <section class="section_table_admin ancho">
     <table class="table_verdocs">
@@ -44,6 +46,7 @@
         FROM info_alumno ia
         LEFT JOIN fin_docs fd ON ia.id_registro = fd.id_registro
         LEFT JOIN fin_coment fc ON fd.id_pdf = fc.id_pdf
+        WHERE fd.fecha_subida IS NOT NULL
         ";
 
         // Ejecutar la consulta

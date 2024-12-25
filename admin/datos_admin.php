@@ -13,6 +13,8 @@
   <?php
   include "header_admin.php"
   ?>
+  <h2 class="h2_title_sections">Alumnos Registrados</h2>
+
 
   <section class="section_table_admin ancho">
     <table class="table_verdocs">

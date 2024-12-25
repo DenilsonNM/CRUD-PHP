@@ -500,3 +500,8 @@ footer {
   font-weight: bold;
   color: var(--color-7);
 }
+
+.h2_title_sections {
+  text-align: center;
+  padding-top: 20px;
+}
