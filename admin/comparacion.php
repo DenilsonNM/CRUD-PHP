@@ -8,11 +8,10 @@ session_start();
 
 $query = mysqli_query($conectar, "SELECT * FROM us_admin WHERE nom_admin = '$nom_admin' AND contr_admin = '$contr_admin'");
 
-$nr = mysqli_num_rows($query);
-
-if ($nr == 1) {
-
+if ($query && mysqli_num_rows($query) == 1) {
     $row = mysqli_fetch_assoc($query);
+
+    $_SESSION['nom_admin'] = $row['nom_admin'];
 
     header("location: index_admin.php");
     exit;
@@ -25,3 +24,4 @@ if ($nr == 1) {
 <?php
     exit;
 }
+?>
