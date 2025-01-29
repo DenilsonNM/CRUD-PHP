@@ -11,10 +11,10 @@
   <section>
     <form action="comparacion_user.php" method="post">
       <h2>Login</h2>
-      <p>Usuario</p>
-      <input type="text" name="nom_admin" required>
+      <p>Correo</p>
+      <input type="text" name="correo_user" required>
       <p>Contraseña</p>
-      <input type="password" name="contr_admin" required>
+      <input type="password" name="contr_user" required>
 
       <button type="submit">Entrar</button>
       <p>¿No tienes una cuenta? <a href="registro_user.php">Registrate aquí</a></p>
