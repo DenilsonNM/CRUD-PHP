@@ -9,7 +9,7 @@
 
 <body>
   <section>
-    <form action="comparacion.php" method="post">
+    <form action="comparacion_user.php" method="post">
       <h2>Login</h2>
       <p>Usuario</p>
       <input type="text" name="nom_admin" required>
