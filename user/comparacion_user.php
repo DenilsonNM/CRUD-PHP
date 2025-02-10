@@ -12,6 +12,7 @@ if ($query && mysqli_num_rows($query) == 1) {
     $row = mysqli_fetch_assoc($query);
 
     $_SESSION['nombre_user'] = $row['nombre_user'];
+    $_SESSION['id_user'] = $row['id_user'];
 
     header("location: ../main/menu_registro.php");
     exit;

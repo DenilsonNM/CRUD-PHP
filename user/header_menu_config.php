@@ -2,6 +2,7 @@
   session_start();
   error_reporting(0);
   $varsesion = $_SESSION['nombre_user'];
+  $idsesion = $_SESSION['id_user'];
   if ($varsesion == null || $varsesion == '') {
     header("location: ../user/login.php");
     die();
@@ -12,6 +13,7 @@
       <img src="../img/logotransparente.png  " alt="">
       <h1> <?php
             echo "Usuario: " . $_SESSION['nombre_user'];
+            // echo " id: " . $_SESSION['id_user'];
             ?></h1>
     </div>
   </Header>
