@@ -12,7 +12,7 @@
 <body>
 
   <?php
-  include "../main/header_menu_reg.php"
+  include "header_menu_config.php"
   ?>
 
   <section class="section_table_admin ancho">
